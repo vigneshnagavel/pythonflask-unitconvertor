@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/jpg" href="{{url_for('static', filename='3.jpg')}}"/>
+    <style>
+        body{
+          margin: 0%;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .topnav{
+          background-color: rgb(13, 35, 65);
+          overflow: hidden;
+        }
+        .topnav a{
+          float: left;
+          display: block;
+          color: azure;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 100;
+          top: 0;
+        }
+        .topnav a:hover{
+          background-color: rgb(0, 110, 255);
+        }
+        .h1{
+          text-align: center;
+          position: relative;
+  
+        }
+        .main{
+          text-align: center;
+          width: 30%;
+          height: 150px;
+          background-color: rgb(0, 110, 255);
+          padding: 10px;
+          margin: auto;
+          border-radius: 10px;
+          border-color: rgb(13, 35, 65);
+          border-width: 3px;
+          border-style: solid;
+          position: relative;
+        }
+        .text{
+          color: azure;
+        }
+        .homeh1{
+          text-align: center;
+          background-color: azure;
+          border-style: solid;
+          border-color: rgb(13, 35, 65);
+          margin: 10px;
+          padding: 5px;
+        }
+        p{
+            position: relative;
+            font-size: 20px;
+            padding: 50px;
+        }
+        img{
+            text-align: center;
+        }
+        .imgtopright{
+            right: 50px;
+            left: 20px;
+        }
+        .imgtopleft{
+            left: 10px;
+        }
+      </style>
+</head>
+<body class="body">
+<div >
+    <nav class="topnav">
+        <a href="/" >Home</a>
+        <a href="math">Math Solver</a>
+        <a href="unitconvertor">Unit Convertor</a>
+    </nav>
+</div>
+<div class="col-md-12">
+    <h1 class="homeh1 container-fluid ">
+         A Website created in Python - Flask Framework.</h1>
+</div>
+<div class="col-md-12">
+    <div class="col-md-6 imgtopleft container-fluid ">
+      <img class="img-responsive" src="{{url_for('static', filename='flask.png')}}" alt="" height="250px" width="530px">
+    </div>
+    <div class="col-md-6 imgtopright container-fluid ">
+      <img class="img-responsive" src="{{url_for('static', filename='python.png')}}" alt="" height="250px" width="270px">
+    </div>
+  
+</div>
+<div class="container-fluid col-md-12 " style=" margin-top:px;">
+
+  <p>
+   Once you have Flask up and running, you’ll find a variety of extensions available in the community to integrate your project for production. The Flask core team reviews extensions and ensures approved extensions do not break with future releases.
+   <br>
+   <br>
+   If you're developing a web app in Python, chances are you're leveraging a framework. A framework "is a code library that makes a developer's life easier when building reliable, scalable, and maintainable web applications" by providing reusable code or extensions for common operations. There are a number of frameworks for Python, including Flask, Tornado, Pyramid, and Django. New Python developers often ask: Which framework should I use?
+  </p>
+</div>
+<div>
+  <div class="col-md-6 container-fluid well">
+    <h1>Math Solver</h1>
+    <p class="bg-success">
+      Math Solver is made from Python math module and is the working progress to coded soon...
+    </p>
+  </div>
+  <div class="col-md-6 container-fluid well">
+    <h1>Unit Convertor</h1>
+    <p class="bg-success">
+      Unit convertor is simple program to convert unit to unit over online.this is made to practive on data transfer from html to python and then proccessed python to html.
+    </p>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>    
+</body>
+</html>
